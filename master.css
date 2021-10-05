@@ -1,0 +1,76 @@
+
+
+
+/*assignment 03/33-41*/
+.parent{
+  width: 550px;
+  position: relative;
+  margin: 20px auto;
+}
+
+.container-one{
+  background-color: #eee;
+  width: 100px;
+  height: 113px;
+  padding: 20px;
+  position: absolute;
+  float: left;
+  
+}
+
+.container-two{
+  background-color: #eee;
+  width: 100px;
+  height: 113px;
+  padding: 20px;
+  position: absolute;
+  float: right;
+  margin-left: 178px
+}
+
+.basic{
+  background-color: #0095ff;
+  width: 100px;
+  text-align: center;
+  border-radius: 3px;
+  color: white;
+  text-transform: capitalize;
+}
+
+.circle{
+  margin-top: 16px;
+  text-align: center;
+  border:  #80808030;
+  background-color: #80808030;
+  width: 80px;
+  height: 80px;
+  border-radius: 40px;
+  margin-left: 10px;
+  text-align: center;
+  line-height: 5;
+}
+
+.container-two::before{
+  content: "Or";
+  position: absolute;
+  border: 1px solid#0095ff;
+  right: 154px;
+  height: 10px;
+  width: 10px;
+  font-size: 8px;
+  top: 42%;
+  border-radius: 5px;
+  background-color: #0095ff;
+  color: white;
+  text-align: center;
+}
+
+.container-one::after{
+  content: "";
+    position: absolute;
+    background-color: #0095ff;
+    left: 157px;
+    height: 151px;
+    top: 0%;
+    width: 1px;
+}
